@@ -7,9 +7,19 @@ import {
     Ship,
     House,
     Sun,
+    Sprout
 } from "lucide-react";
 
 const services = [
+    {
+        title: "Livestock, Fisheries & Crop Farming",
+        description:
+            "Livestock, fish and crop farming activities and agricultural opportunities.",
+        image: "/service-farming.jpg",
+        href: "/services/livestock-fisheries-crop-farming",
+        icon: Sprout,
+        iconColor: "bg-(--accent)",
+    },
     {
         title: "General Contracting",
         description:
@@ -88,7 +98,7 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Service cards */}
-                <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+                <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service) => {
                         const Icon = service.icon;
 

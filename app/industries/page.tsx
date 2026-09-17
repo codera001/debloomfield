@@ -7,17 +7,24 @@ import {
   Landmark,
   ShoppingBag,
   Truck,
+  Sprout,
   Zap,
   ArrowRight,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Industries We Support",
-  description:
-    "Explore the industries and sectors DeBloomField Investment Ltd is positioned to support through contracting, logistics, supplies, shipping, equipment, real estate and solar energy solutions in Nigeria.",
+description:
+  "Explore the industries DeBloomField Investment Ltd is positioned to support, including agriculture, construction, commerce, real estate, logistics and renewable energy in Nigeria.",
 };
 
 const industries = [
+  {
+  title: "Agriculture & Agribusiness",
+  description:
+    "Livestock, fisheries and crop farming activities, alongside enquiries and partnership opportunities in agriculture.",
+  icon: Sprout,
+},
   {
     title: "Construction & Infrastructure",
     description:

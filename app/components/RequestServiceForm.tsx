@@ -13,6 +13,7 @@ import {
 type Status = "idle" | "loading" | "success" | "error";
 
 const services = [
+    "Livestock, Fisheries & Crop Farming",
     "General Contracting",
     "Logistics & Moving",
     "Supplies & General Services",

@@ -8,6 +8,7 @@ import {
   Ship,
   House,
   Sun,
+  Sprout,
   ArrowRight,
   MessageSquareText,
   SearchCheck,
@@ -16,11 +17,20 @@ import {
 
 export const metadata: Metadata = {
   title: "Our Services",
-  description:
-    "Explore DeBloomField Investment Ltd services including general contracting, logistics, supplies, shipping and equipment, real estate, and solar energy solutions across Nigeria.",
+description:
+  "Explore DeBloomField Investment Ltd services, including livestock, fisheries and crop farming, general contracting, logistics, supplies, shipping and equipment, real estate, and solar energy across Nigeria.",
 };
 
 const services = [
+  {
+    title: "Livestock, Fisheries & Crop Farming",
+    description:
+      "Livestock, fish and crop farming activities, with opportunities for agricultural enquiries and partnerships.",
+    image: "/service-farming.jpg",
+    href: "/services/livestock-fisheries-crop-farming",
+    icon: Sprout,
+    iconColor: "bg-(--accent)",
+  },
   {
     title: "General Contracting",
     description:
@@ -116,10 +126,11 @@ export default function ServicesPage() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">
-            From contracting and logistics to real estate and renewable
-            energy, DeBloomField brings multiple business capabilities
-            together under one organization.
-          </p>
+  From livestock, fisheries and crop farming to contracting,
+  logistics, real estate and renewable energy, DeBloomField
+  brings multiple business capabilities together under one
+  organization.
+</p>
         </div>
       </section>
 

@@ -3,7 +3,7 @@ const capabilities = [
     number: "01",
     title: "Multi-Sector Solutions",
     description:
-      "Business capabilities spanning contracting, logistics, procurement, real estate, energy and related services.",
+      "Business capabilities spanning agriculture, contracting, logistics, procurement, real estate, energy and related services.",
   },
   {
     number: "02",
@@ -27,7 +27,7 @@ const capabilities = [
 
 export default function CapabilityStrip() {
   return (
-  <section className="relative z-20 -mb-20 -mt-10 px-4 text-white sm:-mb-24 sm:-mt-12 lg:-mb-28 lg:-mt-14">
+    <section className="relative z-20 -mb-20 -mt-10 px-4 text-white sm:-mb-24 sm:-mt-12 lg:-mb-28 lg:-mt-14">
       <div className="container overflow-hidden rounded-2xl bg-(--primary) shadow-xl">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((capability) => (

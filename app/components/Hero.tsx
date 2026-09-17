@@ -11,7 +11,7 @@ const slides = [
         title: "Building Solutions. Moving Business.",
         highlight: "Creating Opportunities.",
         description:
-            "DeBloomField Investment Ltd provides contracting, logistics, procurement, shipping, equipment, real estate and solar energy solutions for individuals, businesses and organizations across Nigeria.",
+            "DeBloomField Investment Ltd works across livestock, fisheries and crop farming, contracting, logistics, procurement, shipping, equipment, real estate and solar energy in Nigeria.",
         image: "/hero-business.jpg",
         alt: "Construction, logistics, shipping and solar energy services",
     },
@@ -34,6 +34,16 @@ const slides = [
             "Explore property-related opportunities and renewable energy solutions designed around evolving residential, commercial and investment needs.",
         image: "/hero-growth.jpg",
         alt: "Modern real estate development with solar energy",
+    },
+    {
+        id: 4,
+        eyebrow: "Livestock • Fisheries • Crop Farming",
+        title: "Growing Opportunities Through",
+        highlight: "Agriculture and Agribusiness.",
+        description:
+            "Explore DeBloomField’s livestock, fisheries and crop farming activities, and get in touch about agricultural enquiries and partnerships.",
+        image: "/service-farming.jpg",
+        alt: "Illustrative image of livestock, fish farming and crops",
     },
 ];
 

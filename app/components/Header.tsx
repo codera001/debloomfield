@@ -103,6 +103,9 @@ export default function Header() {
                             </Link>
 
                             <div className="invisible absolute left-0 top-full z-50 mt-3 w-64 translate-y-2 rounded-lg border border-gray-200 bg-white p-2 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                                <DropdownLink href="/services/livestock-fisheries-crop-farming">
+                                    Livestock, Fisheries &amp; Crop Farming
+                                </DropdownLink>
                                 <DropdownLink href="/services/general-contracting">
                                     General Contracting
                                 </DropdownLink>
@@ -212,6 +215,15 @@ export default function Header() {
                                         id="mobile-services-menu"
                                         className="ml-3 border-l border-gray-200 pl-3"
                                     >
+                                        <MobileServiceLink
+                                            href="/services/livestock-fisheries-crop-farming"
+                                            closeMenu={() => {
+                                                setMenuOpen(false);
+                                                setServicesOpen(false);
+                                            }}
+                                        >
+                                            Livestock, Fisheries &amp; Crop Farming
+                                        </MobileServiceLink>
                                         <MobileServiceLink
                                             href="/services/general-contracting"
                                             closeMenu={() => {

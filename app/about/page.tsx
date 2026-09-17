@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   BadgeCheck,
   Eye,
@@ -79,7 +80,8 @@ export default function AboutPage() {
               DeBloomField Investment Ltd is based in Port Harcourt, Rivers
               State, and is building a diversified business focused on
               contracting, logistics, procurement, shipping, equipment, real
-              estate, solar energy and general services.
+              estate, solar energy, livestock, fisheries, crop farming and
+              general services.
             </p>
 
             <p className="mt-4 text-base leading-7 text-gray-600">
@@ -117,6 +119,73 @@ export default function AboutPage() {
                   value.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Leadership */}
+      <section className="bg-white py-16 lg:py-20">
+        <div className="container">
+          <div className="max-w-2xl">
+            <p className="section-subtitle">Our Leadership</p>
+
+            <h2 className="mt-3 text-3xl font-bold text-(--primary) sm:text-4xl">
+              Meet Our CEO
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-600">
+              Get to know the person leading DeBloomField Investment Ltd.
+            </p>
+          </div>
+
+          <div className="mt-10 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+            {/* CEO portrait */}
+            <div className="mx-auto w-full max-w-md lg:mx-0">
+              <div className="relative aspect-4/5 overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
+                <Image
+                  src="/ceo-sunny-chiorlu.jpg"
+                  alt="Portrait of Sunny Kingsley Chiorlu"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 448px"
+                  className="object-cover object-center"
+                />
+              </div>
+            </div>
+
+            {/* CEO information */}
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-(--accent-dark)">
+                Leadership
+              </p>
+
+              <h3 className="mt-3 text-3xl font-bold leading-tight text-(--primary) sm:text-4xl">
+                Sunny Kingsley Chiorlu
+              </h3>
+
+              <p className="mt-4 inline-block rounded-md bg-(--accent) px-4 py-2 text-sm font-semibold text-white">
+                Chief Executive Officer
+              </p>
+
+              <div className="mt-7 h-1 w-14 rounded-full bg-(--accent)" />
+
+              <p className="mt-7 text-base leading-8 text-gray-600 sm:text-lg">
+                Sunny Kingsley Chiorlu is the Chief Executive Officer of
+                DeBloomField Investment Ltd, a Nigerian company developing
+                business opportunities across multiple sectors.
+              </p>
+
+              <p className="mt-4 leading-8 text-gray-600">
+                DeBloomField&apos;s areas of focus include contracting, logistics,
+                general supplies, shipping and equipment, real estate, solar
+                energy, and livestock, fisheries and crop farming.
+              </p>
+
+              <Link
+                href="/contact"
+                className="mt-8 inline-block rounded-md bg-(--primary) px-6 py-3.5 font-semibold text-white transition hover:bg-(--accent-dark)"
+              >
+                Contact Our Team
+              </Link>
             </div>
           </div>
         </div>
@@ -195,11 +264,10 @@ export default function AboutPage() {
                   className="rounded-2xl border border-gray-200 p-6"
                 >
                   <div
-                    className={`flex h-12 w-12 items-center justify-center rounded-xl ${
-                      index % 2 === 0
-                        ? "bg-(--accent)"
-                        : "bg-(--primary)"
-                    }`}
+                    className={`flex h-12 w-12 items-center justify-center rounded-xl ${index % 2 === 0
+                      ? "bg-(--accent)"
+                      : "bg-(--primary)"
+                      }`}
                   >
                     <Icon className="text-white" size={22} />
                   </div>

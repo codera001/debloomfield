@@ -27,11 +27,11 @@ export default function AboutPreview() {
                     </p>
 
                     <p className="mt-4 max-w-2xl text-base leading-7 text-white/80">
-                        Our business interests span contracting, logistics, procurement,
-                        shipping, equipment, real estate, solar energy and general
-                        services. We aim to create value by understanding client needs,
-                        identifying suitable solutions and developing strong business
-                        relationships.
+                        Our business interests span livestock, fisheries and crop farming,
+                        contracting, logistics, procurement, shipping, equipment, real estate,
+                        solar energy and general services. We aim to create value by
+                        understanding client needs, identifying suitable solutions and
+                        developing strong business relationships.
                     </p>
                     {/* Values */}
                     <div className="mt-8 grid gap-6 sm:grid-cols-2">

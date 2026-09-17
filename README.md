@@ -53,3 +53,10 @@ solar-energy
 
 <!-- update request service form -->
 by using searchParams 
+
+<!-- deployment -->
+npm run build
+git status
+git add .
+git commit -m ""
+git push origin main
